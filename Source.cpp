@@ -66,11 +66,9 @@ int main(int argc, char* argv[]) {
 		// Second argument is the finetune in cents, 100 being a semitone, can be positive or negative and exceed +/-100
 
 		else {
-			for (size_t i = 1; i < argc; i++) {
-				while (*argChar) {
-					*argChar = toupper(*argChar);
-					argChar++;
-				}
+			while (*argChar) {
+				*argChar = toupper(*argChar);
+				argChar++;
 			}
 			argChar = argv[1];
 
