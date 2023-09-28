@@ -85,9 +85,9 @@ int main(int argc, char* argv[]) {
 				argChar++;
 				bool accidental = false;
 				switch (*argChar) {
-				case 35: semi++; accidental = true; note += "#"; argChar++; break;
-				case 66: semi--; accidental = true; note += "b"; argChar++; break;
-				default: note += "-";
+					case 35: semi++; accidental = true; note += "#"; argChar++; break;
+					case 66: semi--; accidental = true; note += "b"; argChar++; break;
+					default: note += "-";
 				}
 
 				// Check if octave is negative
